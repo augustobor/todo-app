@@ -1,0 +1,45 @@
+@import '../../stylesheets/style.config.css';
+
+.TodoItem {
+  background-color: var(--gray-black);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5%;
+  width: 90%;
+  margin-top: 24px;
+  box-shadow: 0px 0px 10px var(--beige-serenito);
+}
+
+.TodoItem-p {
+  color: var(--TODO-color-white);
+  margin: 24px 0 24px 24px;
+  width: calc(100% - 120px);
+  font-size: large;
+  line-height: 24px;
+  font-weight: 400;
+}
+.TodoItem-p--complete {
+  text-decoration: line-through;
+}
+
+
+@media screen and (min-width: 550px) {
+  .TodoItem {
+    margin: 5% 10%;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .TodoItem {
+    margin: 2% 20%;
+    width: 60%;
+    height: 10vh;
+  }
+
+  .TodoItem-p {
+    font-size: x-large;
+  }
+}

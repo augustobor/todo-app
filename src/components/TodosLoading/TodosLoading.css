@@ -1,0 +1,75 @@
+.LoadingTodo-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5%;
+  width: 90%;
+  margin-top: 5%;
+  box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
+}
+
+.LoadingTodo-text {
+  margin: 24px 0 24px 24px;
+  width: calc(100% - 120px);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.LoadingTodo-completeIcon,
+.LoadingTodo-deleteIcon {
+  border-radius: 50px;
+  height: 48px;
+  width: 48px;
+}
+
+.LoadingTodo-completeIcon {
+  position: absolute;
+  left: 12px;
+}
+
+.LoadingTodo-deleteIcon {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.LoadingTodo-container,
+.LoadingTodo-completeIcon,
+.LoadingTodo-deleteIcon {
+  background: linear-gradient(90deg, var(--gray-black), rgb(33, 33, 33));
+  background-size: 400% 400%;
+  animation: loadingAnimation 3s ease-in-out infinite;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .LoadingTodo-container {
+    margin: 5% 10%;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .LoadingTodo-container {
+    margin: 2% 20%;
+    width: 60%;
+    height: 10vh;
+  }
+
+  .LoadingTodo-text {
+    font-size: x-large;
+  }
+}

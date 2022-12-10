@@ -1,0 +1,110 @@
+@import '../../stylesheets/style.config.css';
+
+form {
+  width: 90%;
+  max-width: 300px;
+  background-color: var(--soft-black);
+  border-radius: var(--border-radious-units);
+  padding: 8% 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+label {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--beige-serenito);
+  margin-bottom: 26px;
+}
+
+textarea {
+  background-color: var(--dark-black-wood);
+  border: 2px solid var(--beige-serenito);
+  border-radius: 2px;
+  box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
+  color: var(--TODO-color-white);
+  font-size: x-large;
+  text-align: center;
+  padding: 5%;
+  height: 10vh;
+  width: calc(100% - 15%);
+}
+
+textarea::placeholder {
+  color: #A5A5A5;
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+textarea:focus {
+  outline-color: var(--sunny-yellow);
+}
+
+.TodoForm-buttonContainer {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.TodoForm-button {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  color: var(--TODO-color-white);
+  font-weight: 400;
+  width: 120px;
+  height: 48px;
+  border-radius: 2px;
+  border: none;
+  font-family: 'Montserrat';
+}
+
+.TodoForm-button--add {
+  background: var(--beige-serenito);
+  color: var(--dark-black-wood);
+  box-shadow: 0px 0px 10px var(--TODO-color-white);
+}
+
+.TodoForm-button--add:hover {
+  background: var(--TODO-color-white);
+  color: var(--soft-black);
+  transition: all 0.1s ease;
+}
+
+.TodoForm-button--add:active {
+  background: var(--gray-black);
+  color: var(--TODO-color-white);
+  box-shadow: none;
+  transition: all 0.1s ease;
+}
+
+.TodoForm-button--cancel {
+  background: transparent;
+}
+
+
+@media screen and (min-width: 1000px) {
+  form {
+    width: 90%;
+    max-width: 600px;
+    padding: 3%;
+  }
+
+  textarea {
+    font-size: x-large;
+    height: 20vh;
+  }
+
+  .TodoForm-button {
+    font-size: x-large;
+    width: 120px;
+    height: 52px;
+  }
+  
+
+}

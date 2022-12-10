@@ -1,0 +1,16 @@
+.TodoCounter {
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+  padding: 48px;
+}
+
+.TodoCounter--loading {
+  opacity: 25%;
+}
+
+@media screen and (min-width: 550px) {
+  .TodoCounter {
+    font-size: xx-large;
+  }
+}
