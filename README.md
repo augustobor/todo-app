@@ -1,6 +1,6 @@
 ## 👋🏻 Welcome to todo-app!
 
-### This project is released to show my react & localstorage skills
+### This project was release to show my react & localstorage skills
  
  - 📝 You can add & erase your TODO notes  
 
